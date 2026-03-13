@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "954880033258",
+    "project_id": "smartclasscheckin",
+    "storage_bucket": "smartclasscheckin.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:954880033258:android:9b322a0b54397238ae3293",
+        "android_client_info": {
+          "package_name": "com.university.smart_checkin_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlWoGUYQ0Uo3nELIeOJMKqXEUfLSdG61s"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
