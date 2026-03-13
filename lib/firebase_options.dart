@@ -17,10 +17,7 @@ import 'package:flutter/foundation.dart'
 class DefaultFirebaseOptions {
   static FirebaseOptions get currentPlatform {
     if (kIsWeb) {
-      throw UnsupportedError(
-        'DefaultFirebaseOptions have not been configured for web - '
-        'you can reconfigure this by running the FlutterFire CLI again.',
-      );
+      return web;
     }
     switch (defaultTargetPlatform) {
       case TargetPlatform.android:
@@ -65,4 +62,15 @@ class DefaultFirebaseOptions {
     storageBucket: 'smartclasscheckin.firebasestorage.app',
     iosBundleId: 'com.university.smartCheckinApp',
   );
+
+  static const FirebaseOptions web = FirebaseOptions(
+    apiKey: 'AIzaSyDYWYw-pG-5DZRrtPkkA5JXfnc2pDliOo0',
+    appId: '1:954880033258:web:3aea368358c586c3ae3293',
+    messagingSenderId: '954880033258',
+    projectId: 'smartclasscheckin',
+    authDomain: 'smartclasscheckin.firebaseapp.com',
+    storageBucket: 'smartclasscheckin.firebasestorage.app',
+    measurementId: 'G-5K6LZRY2N5',
+  );
+
 }
