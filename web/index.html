@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
   <!--
     If you are serving your web app in a path other than the root, change the
@@ -27,11 +28,15 @@
   <link rel="apple-touch-icon" href="icons/Icon-192.png">
 
   <!-- Favicon -->
-  <link rel="icon" type="image/png" href="favicon.png"/>
+  <link rel="icon" type="image/png" href="favicon.png" />
 
   <title>smart_checkin_app</title>
   <link rel="manifest" href="manifest.json">
+
+  <!-- jsQR library for mobile_scanner on web -->
+  <script src="https://cdn.jsdelivr.net/npm/jsqr@1.4.0/dist/jsQR.min.js"></script>
 </head>
+
 <body>
   <!--
     You can customize the "flutter_bootstrap.js" script.
@@ -41,6 +46,26 @@
     For more details:
     * https://docs.flutter.dev/platform-integration/web/initialization
   -->
+  <!-- Firebase SDK -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/10.8.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyDYWYw-pG-5DZRrtPkkA5JXfnc2pDliOo0",
+      authDomain: "smartclasscheckin.firebaseapp.com",
+      projectId: "smartclasscheckin",
+      storageBucket: "smartclasscheckin.firebasestorage.app",
+      messagingSenderId: "954880033258",
+      appId: "1:954880033258:web:0d3aa9fcde24e477ae3293",
+      measurementId: "G-MQVBEHTX6K"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
+
   <script src="flutter_bootstrap.js" async></script>
 </body>
+
 </html>
