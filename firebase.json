@@ -1,1 +1,36 @@
-{"flutter":{"platforms":{"android":{"default":{"projectId":"smartclasscheckin","appId":"1:954880033258:android:9b322a0b54397238ae3293","fileOutput":"android/app/google-services.json"}},"dart":{"lib/firebase_options.dart":{"projectId":"smartclasscheckin","configurations":{"android":"1:954880033258:android:9b322a0b54397238ae3293","ios":"1:954880033258:ios:04d5fbdccfd6cfc0ae3293"}}}}}}
+{
+  "flutter": {
+    "platforms": {
+      "android": {
+        "default": {
+          "projectId": "smartclasscheckin",
+          "appId": "1:954880033258:android:9b322a0b54397238ae3293",
+          "fileOutput": "android/app/google-services.json"
+        }
+      },
+      "dart": {
+        "lib/firebase_options.dart": {
+          "projectId": "smartclasscheckin",
+          "configurations": {
+            "android": "1:954880033258:android:9b322a0b54397238ae3293",
+            "ios": "1:954880033258:ios:04d5fbdccfd6cfc0ae3293"
+          }
+        }
+      }
+    }
+  },
+  "hosting": {
+    "public": "build/web",
+    "ignore": [
+      "firebase.json",
+      "**/.*",
+      "**/node_modules/**"
+    ],
+    "rewrites": [
+      {
+        "source": "**",
+        "destination": "/index.html"
+      }
+    ]
+  }
+}
